@@ -1,0 +1,213 @@
+@font-face {  
+    font-family: 'Veles-Bold.0.9.2';
+    src: url('/fonts/Veles-Bold.0.9.2.otf') format('opentype');
+}
+@font-face {  
+    font-family: MB-Demonic_Tale;
+    src: url('/fonts/MB-Demonic_Tale.ttf') format('truetype');
+}
+   body {
+    /* font: 11pt Arial, Helvetica, sans-serif; Рубленый шрифт текста */
+
+    font-family:Arial;
+    font: 11pt Arial;
+    margin: 0px; /* Отступы на странице */
+    padding: 0px; /* Поля вокруг текста */
+    background:#aaaaaa; 
+   }
+
+
+   h1{
+    font-family:MB-Demonic_Tale;
+    font-size:42px; /* Размер шрифта */
+    margin: 0; /* Убираем отступы */
+    color:#00B7FF; /*#fc6;  Цвет текста */
+    text-align:center;
+   }
+   h2 {
+    margin-top: 0; /* Убираем отступ сверху */
+    float:left;
+    font-size: 24px; /* Размер шрифта */
+   }
+   h3{
+    font-size: 12px; /* Размер шрифта */
+    margin: 0; /* Убираем отступы */
+    float:right;
+   }
+
+   #header { /* Верхний блок */
+    margin-bottom: 0px; /* Убираем отступ сверху */
+    padding: 0px; /* Поля вокруг текста */
+    background: #F4ECCE; /*#0080c0;  Цвет фона */
+
+   }
+   #sideright {
+/*     display:inline-block;*/
+     float: right;
+     width: 125px; /* Ширина колонки */
+     padding: 15px; /* Поля вокруг текста */
+     margin-left:-100%;
+     margin-top:10px;
+     pisition:relative;
+     background: #F4ECCE;
+	-webkit-box-shadow: 10px 10px 10px #000000, 3px 6px 9px rgba(58,11,86,0.8) inset;
+	-moz-box-shadow: 10px 10px 10px #000000, 3px 6px 9px rgba(58,11,86,0.8) inset;
+	box-shadow: 10px 10px 10px #000000, 3px 6px 9px rgba(58,11,86,0.8) inset;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px 4px 4px 4px;
+
+   }
+   #sidebar { /* Левая колонка */
+
+    background:#999999;
+    color: #f1d2c2;
+    float: left; /* Обтекание справа */
+    /* border: 3px solid #333;*/ /* Параметры рамки вокруг */
+    width: 200px; /* Ширина колонки */
+    padding: 5px; /* Поля вокруг текста */
+    margin-left:-100%;
+    margin-top:10px;
+    pisition:relative;
+    
+	-webkit-box-shadow: 1px 3px 6px #ffffff, 1px 3px 6px rgba(158,111,86,0.5) inset;
+	-moz-box-shadow: 1px 1px 2px #ffffff, 1px 1px 2px rgba(158,111,86,0.3) inset;
+	box-shadow: 3px 6px 9px #000000, 3px 6px 9px rgba(158,111,86,0.9) inset;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px 4px 4px 4px;
+   }
+   #sidebar p{ /* Левая колонка */
+     text-align:center;
+     font-size: 16px; /* Размер шрифта */
+   }
+   #mcontent { /* Правая колонка */
+    float: left; /* Обтекание справа */
+    width:100%;
+    margin-top:0px;
+    margin-bottom:10px;
+
+    background: url(baloon_back2.jpg) no-repeat; /* Добавляем фон */
+    background-position: top right; /* Положение фона */
+    background-size: 100%; /* Масштабируем фон */
+   }
+.g-plusone{
+ data-annotation="inline";
+ data-width="300";
+}
+   div.colCenter{
+	margin:0 20px 0 220px;
+   }
+   .colCenter > p{
+      font-family:'Veles-Bold.0.9.2';
+      padding-left:10px;
+      padding-right:80px;
+      padding-top:105px;
+      text-align:center;
+   }
+ 
+
+   #footer { /* Нижний блок */
+    background: #333; /* Цвет фона */
+    padding: 5px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+    clear: left; /* Отменяем действие float */
+   }
+
+#img2 {
+  margin:8px;
+  display:inline;
+float:left;
+opacity:1;
+        display:inline-block;
+	width: 195px;
+	height: 260px;
+	position: relative;
+	padding: 15px;
+        padding-bottom:35px;
+	background: #f1d2c2;
+	-webkit-box-shadow: 1px 3px 6px #ffffff, 1px 3px 6px rgba(158,111,86,0.5) inset;
+	-moz-box-shadow: 1px 1px 2px #ffffff, 1px 1px 2px rgba(158,111,86,0.3) inset;
+	box-shadow: 3px 6px 9px #000000, 3px 6px 9px rgba(158,111,86,0.9) inset;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px 4px 4px 4px;
+
+
+}
+#img2 .desc
+  {
+   position: absolute;
+   top:7px;
+   left:40px;
+   text-align:center;
+   font-weight:normal;
+   font-size:150%;
+   font-stretch:expanded;
+   color: 0;
+  }
+
+#img2 img{
+/*   position: absolute;
+   top: 20px;
+   left:20px;*/
+ border-radius: 50px;
+ opacity:0.75;
+}
+
+#img2 img:hover{
+/*
+	-webkit-transition: opacity 0.3s linear;
+	-moz-transition: opacity 0.3s linear;
+	-o-transition: opacity 0.3s linear;
+	-ms-transition: opacity 0.3s linear;
+	transition: opacity 0.3s linear;
+*/
+ opacity:1;
+/*        border-radius: 50px;*/
+}
+#document-list{
+   display:block;
+   text-align:center;
+   font-size:150%;
+   border: 3px solid #333;
+   width:90%;
+   float:left;
+}
+
+#document-list ul{
+   width:  95%;
+   float:left;
+   border: 1px solid #333;
+}
+#document-list ul li{
+   width:  80%;
+   float:right;
+   border: 3px solid #333;
+}
+#document-list img{
+   float:left;
+   border: 2px solid #333;
+}
+
+
+/*      -----------------  */
+#dyf-wrapper {
+	/*display:inline-block;*/
+	text-align: center;
+	min-width: 900px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	height: 250px;
+	padding: 0 5px;
+/*	width:64%;
+	margin:0 18%;*/
+	width: 900px;
+	margin:0 auto;
+	overflow: hidden;
+	box-shadow: 0 0 10px #bbb;
+}
+#carousel img {
+	padding: 25px;
+	display: inline-block;
+}

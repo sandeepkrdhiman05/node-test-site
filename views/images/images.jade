@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  #document-list
+     -for (var d in doc)
+        ul
+          img(src= '../images/upload/'+doc[d].imgname, alt='Sweet_1',width='195', height='260')
+          li
+            a(id='image_title-' + doc[d].id, href='/images/' + doc[d].id)
+              =doc[d].imgtitle                 
+          li
+            =doc[d].imgname 
+          li
+            =doc[d].imgpath 
+          li
+            =doc[d].imgsize 
+          li
+            =doc[d].imgtype 
+     a(href='../documents') documents
+     a(href='../images/upload') 
+        &larr;  upload
+   

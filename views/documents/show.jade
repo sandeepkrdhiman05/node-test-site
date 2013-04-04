@@ -1,0 +1,13 @@
+h =d.title
+   a.button(href='/documents')
+     &larr; All Documents
+   form(method='post', action='/documents/' + d.id)
+     input(name='d[id]', value=d.id, type='hidden')
+     input(name='_method', value='PUT', type='hidden')
+     include fields.jade
+
+   -for (var i in img)
+      button(onclick=onclick="document.getElementById('my_image').value='#{img[i]._id}';return;")
+        img(src= '../images/upload/'+img[i].imgname)
+//-        img(src= '../images/upload/'+img[i].imgname , onclick="alert((document.getElementById('my_image').value));")
+//-        img(src= '../images/upload/'+img[i].imgname , onclick="document.getElementById('my_image').value='#{img[i]._id}';return false;")

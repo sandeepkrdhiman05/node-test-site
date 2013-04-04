@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  #document-list 
+     -for (var d in doc)
+         ul
+            img(src='images/upload/'+doc[d].image.name,width='195', height='260')
+            li
+              a(id='document-title-' + doc[d].id, href='/documents/' + doc[d].id)
+                =doc[d].title
+            li
+              =doc[d].desc
+            li
+              =doc[d].cost
+              ul
+                li
+                  =doc[d].image.title
+                li
+                  =doc[d].image.name
+      ul
+        li
+          a(href='/documents/new')
+            +
+        li
+          a#delete-document(href='#')
+            -
+      ul
+        li
+         a#save-button(href='#') Save
+        li
+         a#html-button(href='../images') Images
+//-          table(width="100%",cellspacing="0",cellpadding="0")

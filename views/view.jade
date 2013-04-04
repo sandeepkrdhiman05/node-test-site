@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  #mcontent
+    .colCenter
+      -for(var d in doc)
+          #img2
+            .desc #{doc[d].title}
+            a(traregt='_blank' , href='#')
+              img(src='/image/upload/'+doc[d].image.name,width='195', height='260')
+              p #{doc[d].desc}
